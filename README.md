@@ -26,6 +26,6 @@ Reboot the Raspberry Pi with `sudo reboot now` to allow the changes to be applie
 
 See for more details: [Attach Sensor Board](https://coral.ai/docs/enviro-board/get-started/#1-attach-the-sensor-board)
 
-You can use a demo script from the Google Coral to check if everything works - [demo](https://coral.googlesource.com/coral-cloud/+/refs/heads/master/python/coral-enviro/coral/enviro/enviro_demo.py).
+You can use a demo script from Google Coral to check if everything works - [demo](https://coral.googlesource.com/coral-cloud/+/refs/heads/master/python/coral-enviro/coral/enviro/enviro_demo.py).
 
 ## Setup InfluxDB
