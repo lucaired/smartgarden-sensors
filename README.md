@@ -1,6 +1,10 @@
 # Smartgarden Sensors
 
+- [Google Coral Environmental Sensor Board](https://coral.ai/products/environmental)
+
 ## Setup Coral Environmental Sensor Board
+
+![alt Environmental Sensor Board](https://lh3.googleusercontent.com/bKr2VXCTJ36UW9Obaxq4mvJgFRs6mwG8iRMjACxY9kBTzPmYw893yhOCXg8KEjTEM1vTWCCAtk7viRZZUxmoM1WJ9kWT1FguAEjx38w=w2000-rw )
 
 Simply attach the Environmental Sensor Board to 40-pin header on the Raspberry Pi. You can now power the Raspberry Pi and it will automatically apply the device tree and configure the header pins.
 
