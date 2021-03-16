@@ -6,7 +6,8 @@
 
 ![alt Environmental Sensor Board](sensorBoard.webp)
 
-Simply attach the Environmental Sensor Board to 40-pin header on the Raspberry Pi. You can now power the Raspberry Pi and it will automatically apply the device tree and configure the header pins.
+Simply attach the Environmental Sensor Board to 40-pin header on the Raspberry Pi. 
+You can now power the Raspberry Pi and it will automatically apply the device tree and configure the header pins.
 
 Now install the needed libraries and driver - from your Raspberry Pi:
 
