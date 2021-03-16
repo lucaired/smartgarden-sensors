@@ -1,6 +1,8 @@
 # Smartgarden Sensors
 
+You will need:
 - [Google Coral Environmental Sensor Board](https://coral.ai/products/environmental)
+and a compatible device to host the sensor board and InfluxDB. I'm using a Raspberry 3 model B V1.2, but feel free to check out the other [compatible devices](https://coral.ai/products/environmental#compatible-with-coral-and-raspberry-pi-boards).
 
 ## Setup Coral Environmental Sensor Board
 
