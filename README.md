@@ -27,9 +27,7 @@ sudo apt install python3-coral-enviro
 
 Reboot the Raspberry Pi with `sudo reboot now` to allow the changes to be applied.
 
-See for more details: [Attach Sensor Board](https://coral.ai/docs/enviro-board/get-started/#1-attach-the-sensor-board)
-
-You can use a demo script from Google Coral to check if everything works - [demo](https://coral.googlesource.com/coral-cloud/+/refs/heads/master/python/coral-enviro/coral/enviro/enviro_demo.py).
+You can use a demo script from Google Coral to check if everything works - [demo](https://coral.ai/docs/enviro-board/get-started/#3-try-the-demo).
 
 ## Setup InfluxDB
 
@@ -68,6 +66,15 @@ USE smartgarden
 ## Run the Smartgarden Sensors
 Clone this repository [smartgarden-sensors](https://github.com/lucaired/smartgarden-sensors).
 
+Setup virtual environment and install dependencies:
+```
+python3 -m pip install --user --upgrade pip
+python3 -m venv env
+source env/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+Now you can run the script to collect the sensor data:
 ```
 python3 enviro-board.py
 ```

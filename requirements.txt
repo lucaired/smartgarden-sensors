@@ -1,3 +1,2 @@
 influxdb~=5.3.1
 python-dotenv~=0.15.0
-python3-coral-enviro~=1.1
