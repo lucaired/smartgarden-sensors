@@ -66,11 +66,13 @@ USE smartgarden
 ```
 
 ## Run the Smartgarden Sensors
+Clone this repository [smartgarden-sensors](https://github.com/lucaired/smartgarden-sensors).
+
 ```
 python3 enviro-board.py
 ```
 
-You can enter the InfluxDB shell, enter `USE smartgarden` and 
+You can enter the InfluxDB shell, type `USE smartgarden` and 
 - `SHOW MEASUREMENTS` to see the various sensors included in the Google Coral Environmental Sensor Board
 - `SELECT * FROM <MEASUREMENT>;` to query a specific measurement
 
