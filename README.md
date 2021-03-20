@@ -32,3 +32,50 @@ See for more details: [Attach Sensor Board](https://coral.ai/docs/enviro-board/g
 You can use a demo script from Google Coral to check if everything works - [demo](https://coral.googlesource.com/coral-cloud/+/refs/heads/master/python/coral-enviro/coral/enviro/enviro_demo.py).
 
 ## Setup InfluxDB
+
+```
+sudo apt update
+sudo apt upgrade
+
+# add the InfluxDB repository key:
+wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+```
+
+Now add the repository for your Raspian flavour:
+```
+# for buster run
+echo "deb https://repos.influxdata.com/debian buster stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+```
+
+Then install and start InfluxDB
+```
+sudo apt update
+sudo apt install influxdb
+# start at boot
+sudo systemctl unmask influxdb
+sudo systemctl enable influxdb
+# start the InfluxDB service
+sudo systemctl start influxdb
+```
+
+Now configure a database, start the InfluxDB shell by typing `influx`:
+```
+# from the InfluxDB shell
+CREATE DATABASE smartgarden
+USE smartgarden
+```
+
+## Run the Smartgarden Sensors
+```
+python3 enviro-board.py
+```
+
+You can enter the InfluxDB shell, enter `USE smartgarden` and 
+- `SHOW MEASUREMENTS` to see the various sensors included in the Google Coral Environmental Sensor Board
+- `SELECT * FROM <MEASUREMENT>;` to query a specific measurement
+
+Make sure to check out the [Influx Query Language (InfluxQL)](https://docs.influxdata.com/influxdb/v1.8/query_language/) for more insights.
+
+
+
+

@@ -1,6 +1,5 @@
 import os
 import time
-import json
 
 from coral.enviro.board import EnviroBoard
 from dotenv import load_dotenv
